@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal landing page. Web developer, designer, and creator.">
+    <title>Utku Balcıoğlu | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="settings-container">
+        <button id="settings-btn" class="settings-btn" aria-label="Settings">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        </button>
+        <div id="settings-menu" class="settings-menu">
+            <div class="settings-section-title" data-i18n="settings_language">Language Options</div>
+            <button class="theme-option" onclick="setLanguage('en')" data-i18n="lang_en">English</button>
+            <button class="theme-option" onclick="setLanguage('tr')" data-i18n="lang_tr">Turkish</button>
+            <button class="theme-option" onclick="setLanguage('de')" data-i18n="lang_de">German</button>
+            <button class="theme-option" onclick="setLanguage('fr')" data-i18n="lang_fr">French</button>
+            
+            <div class="settings-divider"></div>
+            
+            <div class="settings-section-title" data-i18n="settings_bg">Background Color</div>
+            <button class="theme-option" onclick="setTheme('original')" data-i18n="theme_original">Original Theme</button>
+            <button class="theme-option" onclick="setTheme('light')" data-i18n="theme_light">Light Mode</button>
+            <button class="theme-option" onclick="setTheme('dark')" data-i18n="theme_dark">Dark Mode</button>
+        </div>
+    </div>
+
+    <aside class="left-sidebar">
+        <h3 class="sidebar-title" data-i18n="sidebar_title">The Bridge Between Two Worlds: What is Management Information Systems (MIS)?</h3>
+        <p class="sidebar-text">
+            <span data-i18n="sidebar_text1">In today’s digital age, many people think that business and technology are two separate planets. On one side, you have the Business world—focused on people, profits, and strategy. On the other side, you have the Technology world—focused on coding, hardware, and data. Management Information Systems (MIS) is the bridge that connects these two worlds.</span><br><br>
+            <strong data-i18n="sidebar_text2">Not Just Coding, Not Just Management</strong><br>
+            <span data-i18n="sidebar_text3">A common mistake is thinking that MIS students are just "programmers who take business classes" or "managers who know a little bit of IT." In reality, MIS is about problem-solving. Imagine a large hospital that wants to use an AI system to track patient records. The doctors know what they need for patient care (Business), but they don’t know how to build the software. The software engineers know how to write the code (Technology), but they don’t understand the daily workflow of a hospital. An MIS professional steps in to translate these needs, ensuring the technology actually serves the business goals.</span>
+        </p>
+    </aside>
+
+    <div class="container">
+        <header class="profile-header">
+            <div class="profile-image">
+                <div class="avatar-placeholder"></div>
+            </div>
+            <!-- Replace with your actual name -->
+            <h1 class="name">Utku Balcıoğlu</h1>
+            <!-- Replace with your bio -->
+            <p class="bio" data-i18n="bio">I am a freshman studying Management Information Systems at Dokuz Eylül University, deeply passionate about the intersection of modern technology and business strategy. Currently, I am expanding my technical skillset by mastering Python and exploring the innovative concepts of vibe coding to build creative, agile, and scalable digital solutions.</p>
+        </header>
+
+        <main class="links-section">
+            <!-- Link 1 -->
+            <a href="https://github.com/Kasuosin" target="_blank" rel="noopener noreferrer" class="link-card">
+                <div class="link-content">
+                    <span class="link-title">GitHub</span>
+                    <span class="link-desc" data-i18n="link_github_desc">Explore my open source projects and code.</span>
+                </div>
+                <div class="link-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+            </a>
+
+            <!-- Link 2 -->
+            <a href="https://www.linkedin.com/in/utku-balc%C4%B1o%C4%9Flu-8225723b2/" target="_blank" rel="noopener noreferrer" class="link-card" style="animation-delay: 0.1s;">
+                <div class="link-content">
+                    <span class="link-title">LinkedIn</span>
+                    <span class="link-desc" data-i18n="link_linkedin_desc">Let's connect and talk about professional opportunities.</span>
+                </div>
+                <div class="link-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+            </a>
+
+            <!-- Link 3 -->
+            <a href="https://www.instagram.com/utku.blc/" target="_blank" rel="noopener noreferrer" class="link-card" style="animation-delay: 0.2s;">
+                <div class="link-content">
+                    <span class="link-title">Instagram</span>
+                    <span class="link-desc" data-i18n="link_instagram_desc">Follow my visual journey and stories.</span>
+                </div>
+                <div class="link-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </div>
+            </a>
+        </main>
+        
+        <footer class="footer">
+            <div class="visit-counter-wrapper">
+                <div class="visit-counter">
+                    <span class="counter-label" data-i18n="visit_counter">Giriş Sayısı:</span>
+                    <span id="visit-counter-val">...</span>
+                </div>
+            </div>
+            <p style="margin-top: 1rem;" data-i18n="footer_rights">&copy; 2026 Utku Balcıoğlu. All rights reserved.</p>
+        </footer>
+    </div>
+
+
+
+    <script>
+        fetch('https://api.counterapi.dev/v1/kasuosin/landingpage/up')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('visit-counter-val').innerText = data.count;
+            })
+            .catch(err => {
+                console.error('Sayaç yüklenemedi:', err);
+                document.getElementById('visit-counter-val').innerText = '?';
+            });
+
+        // Settings Menu Toggle
+        const settingsBtn = document.getElementById('settings-btn');
+        const settingsMenu = document.getElementById('settings-menu');
+        settingsBtn.addEventListener('click', () => {
+            settingsMenu.classList.toggle('show');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if(!settingsBtn.contains(e.target) && !settingsMenu.contains(e.target)) {
+                settingsMenu.classList.remove('show');
+            }
+        });
+
+        // Theme Switcher
+        function setTheme(theme) {
+            document.body.classList.remove('theme-light', 'theme-dark');
+            if(theme !== 'original') {
+                document.body.classList.add('theme-' + theme);
+            }
+            settingsMenu.classList.remove('show');
+        }
+
+        // Internationalization (i18n)
+        const translations = {
+            en: {
+                settings_language: "Language Options",
+                lang_en: "English",
+                lang_tr: "Turkish",
+                lang_de: "German",
+                lang_fr: "French",
+                settings_bg: "Background Color",
+                theme_original: "Original Theme",
+                theme_light: "Light Mode",
+                theme_dark: "Dark Mode",
+                sidebar_title: "The Bridge Between Two Worlds: What is Management Information Systems (MIS)?",
+                sidebar_text1: "In today’s digital age, many people think that business and technology are two separate planets. On one side, you have the Business world—focused on people, profits, and strategy. On the other side, you have the Technology world—focused on coding, hardware, and data. Management Information Systems (MIS) is the bridge that connects these two worlds.",
+                sidebar_text2: "Not Just Coding, Not Just Management",
+                sidebar_text3: "A common mistake is thinking that MIS students are just \"programmers who take business classes\" or \"managers who know a little bit of IT.\" In reality, MIS is about problem-solving. Imagine a large hospital that wants to use an AI system to track patient records. The doctors know what they need for patient care (Business), but they don’t know how to build the software. The software engineers know how to write the code (Technology), but they don’t understand the daily workflow of a hospital. An MIS professional steps in to translate these needs, ensuring the technology actually serves the business goals.",
+                bio: "I am a freshman studying Management Information Systems at Dokuz Eylül University, deeply passionate about the intersection of modern technology and business strategy. Currently, I am expanding my technical skillset by mastering Python and exploring the innovative concepts of vibe coding to build creative, agile, and scalable digital solutions.",
+                link_github_desc: "Explore my open source projects and code.",
+                link_linkedin_desc: "Let's connect and talk about professional opportunities.",
+                link_instagram_desc: "Follow my visual journey and stories.",
+                visit_counter: "Visit Count:",
+                footer_rights: "&copy; 2026 Utku Balcıoğlu. All rights reserved."
+            },
+            tr: {
+                settings_language: "Dil Seçenekleri",
+                lang_en: "İngilizce",
+                lang_tr: "Türkçe",
+                lang_de: "Almanca",
+                lang_fr: "Fransızca",
+                settings_bg: "Arkaplan Rengi",
+                theme_original: "Orijinal Tema",
+                theme_light: "Açık Tema",
+                theme_dark: "Koyu Tema",
+                sidebar_title: "İki Dünya Arasındaki Köprü: Yönetim Bilişim Sistemleri (YBS) Nedir?",
+                sidebar_text1: "Günümüzün dijital çağında, birçok insan iş dünyası ve teknolojinin iki ayrı gezegen olduğunu düşünür. Bir tarafta insanlara, karlara ve stratejiye odaklanan İş dünyası vardır. Diğer tarafta kodlama, donanım ve veriye odaklanan Teknoloji dünyası vardır. Yönetim Bilişim Sistemleri (YBS), bu iki dünyayı birbirine bağlayan köprüdür.",
+                sidebar_text2: "Sadece Kodlama Değil, Sadece Yönetim Değil",
+                sidebar_text3: "Yaygın bir hata, YBS öğrencilerinin sadece \"işletme dersleri alan programcılar\" veya \"biraz IT bilen yöneticiler\" olduğunu düşünmektir. Gerçekte, YBS problem çözmekle ilgilidir. Hasta kayıtlarını takip etmek için yapay zeka sistemi kullanmak isteyen büyük bir hastane düşünün. Doktorlar hasta bakımı için neye ihtiyaç duyduklarını bilirler (İş), ancak yazılımı nasıl yapacaklarını bilmezler. Yazılım mühendisleri nasıl kod yazılacağını bilirler (Teknoloji), ancak bir hastanenin günlük iş akışını anlamazlar. Bir YBS profesyoneli, bu ihtiyaçları tercüme etmek için devreye girer ve teknolojinin gerçekten iş hedeflerine hizmet etmesini sağlar.",
+                bio: "Dokuz Eylül Üniversitesi'nde Yönetim Bilişim Sistemleri (YBS) birinci sınıf öğrencisiyim. Modern teknoloji ve iş stratejisinin kesişimine tutkuyla bağlıyım. Şu anda yaratıcı, çevik ve ölçeklenebilir dijital çözümler üretmek için Python öğrenerek ve 'vibe coding' (yapay zeka destekli kodlama) gibi yenilikçi kavramları keşfederek teknik becerilerimi geliştiriyorum.",
+                link_github_desc: "Açık kaynak projelerimi ve kodlarımı inceleyin.",
+                link_linkedin_desc: "Bağlantı kuralım ve profesyonel fırsatlar hakkında konuşalım.",
+                link_instagram_desc: "Görsel yolculuğumu ve hikayelerimi takip edin.",
+                visit_counter: "Giriş Sayısı:",
+                footer_rights: "&copy; 2026 Utku Balcıoğlu. Tüm hakları saklıdır."
+            },
+            de: {
+                settings_language: "Sprachoptionen",
+                lang_en: "Englisch",
+                lang_tr: "Türkisch",
+                lang_de: "Deutsch",
+                lang_fr: "Französisch",
+                settings_bg: "Hintergrundfarbe",
+                theme_original: "Originales Design",
+                theme_light: "Heller Modus",
+                theme_dark: "Dunkler Modus",
+                sidebar_title: "Die Brücke zwischen zwei Welten: Was sind Wirtschaftsinformatik (MIS)?",
+                sidebar_text1: "Im heutigen digitalen Zeitalter denken viele, dass Wirtschaft und Technologie zwei verschiedene Planeten sind. Auf der einen Seite gibt es die Geschäftswelt, die sich auf Menschen, Gewinn und Strategie konzentriert. Auf der anderen Seite steht die Technologiewelt, fokussiert auf Programmierung, Hardware und Daten. Wirtschaftsinformatik (MIS) ist die Brücke, die diese beiden Welten verbindet.",
+                sidebar_text2: "Nicht nur Programmieren, nicht nur Management",
+                sidebar_text3: "Ein häufiger Fehler ist der Glaube, dass MIS-Studenten nur „Programmierer sind, die BWL-Kurse belegen“ oder „Manager, die ein bisschen etwas von IT verstehen“. In Wirklichkeit geht es bei MIS um Problemlösung. Stellen Sie sich ein großes Krankenhaus vor, das ein KI-System nutzen möchte, um Patientenakten zu verfolgen. Die Ärzte wissen, was sie für die Patientenversorgung brauchen (Wirtschaft), aber sie wissen nicht, wie man die Software baut. Die Softwareingenieure wissen, wie man den Code schreibt (Technologie), aber sie verstehen den täglichen Arbeitsablauf eines Krankenhauses nicht. Ein MIS-Experte tritt ein, um diese Bedürfnisse zu übersetzen und sicherzustellen, dass die Technologie tatsächlich den Geschäftszielen dient.",
+                bio: "Ich studiere im ersten Jahr Wirtschaftsinformatik (MIS) an der Dokuz Eylül Universität und habe eine große Leidenschaft für die Schnittstelle zwischen moderner Technologie und Geschäftsstrategie. Derzeit erweitere ich meine technischen Fähigkeiten, indem ich Python lerne und die innovativen Konzepte des Vibe Codings erkunde, um kreative, agile und skalierbare digitale Lösungen zu entwickeln.",
+                link_github_desc: "Entdecken Sie meine Open-Source-Projekte und Code.",
+                link_linkedin_desc: "Lassen Sie uns vernetzen und über berufliche Möglichkeiten sprechen.",
+                link_instagram_desc: "Folgen Sie meiner visuellen Reise und meinen Geschichten.",
+                visit_counter: "Besucherzahl:",
+                footer_rights: "&copy; 2026 Utku Balcıoğlu. Alle Rechte vorbehalten."
+            },
+            fr: {
+                settings_language: "Options de Langue",
+                lang_en: "Anglais",
+                lang_tr: "Turc",
+                lang_de: "Allemand",
+                lang_fr: "Français",
+                settings_bg: "Couleur de Fond",
+                theme_original: "Thème Original",
+                theme_light: "Mode Clair",
+                theme_dark: "Mode Sombre",
+                sidebar_title: "Le Pont Entre Deux Mondes : Qu'est-ce que les Systèmes d'Information de Gestion (SIG) ?",
+                sidebar_text1: "À l'ère numérique actuelle, beaucoup de gens pensent que les affaires et la technologie sont deux planètes distinctes. D'un côté, il y a le monde des affaires, axé sur les personnes, les profits et la stratégie. De l'autre côté, il y a le monde de la technologie, axé sur le codage, le matériel et les données. Les Systèmes d'Information de Gestion (SIG) constituent le pont qui relie ces deux mondes.",
+                sidebar_text2: "Pas Juste du Codage, Pas Juste de la Gestion",
+                sidebar_text3: "Une erreur courante consiste à penser que les étudiants en SIG sont simplement des \"programmeurs qui suivent des cours de commerce\" ou des \"managers qui s'y connaissent un peu en informatique\". En réalité, les SIG visent à résoudre des problèmes. Imaginez un grand hôpital qui souhaite utiliser un système d'IA pour suivre les dossiers des patients. Les médecins savent ce dont ils ont besoin pour les soins des patients (Affaires), mais ils ne savent pas comment créer le logiciel. Les ingénieurs logiciels savent comment écrire le code (Technologie), mais ils ne comprennent pas le flux de travail quotidien d'un hôpital. Un professionnel des SIG intervient pour traduire ces besoins, en s'assurant que la technologie sert réellement les objectifs commerciaux.",
+                bio: "Je suis étudiant en première année de Systèmes d'Information de Gestion à l'Université Dokuz Eylül, profondément passionné par l'intersection entre la technologie moderne et la stratégie d'entreprise. Actuellement, je développe mes compétences techniques en apprenant Python et en explorant les concepts innovants du vibe coding pour concevoir des solutions numériques créatives, agiles et évolutives.",
+                link_github_desc: "Découvrez mes projets open source et mon code.",
+                link_linkedin_desc: "Connectons-nous et parlons d'opportunités professionnelles.",
+                link_instagram_desc: "Suivez mon parcours visuel et mes histoires.",
+                visit_counter: "Nombre de Visites :",
+                footer_rights: "&copy; 2026 Utku Balcıoğlu. Tous droits réservés."
+            }
+        };
+
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+            // Close menu
+            settingsMenu.classList.remove('show');
+        }
+
+        // Initialize default language
+        document.addEventListener('DOMContentLoaded', () => {
+            setLanguage('en');
+        });
+    </script>
+
+
+</body>
+</html>
