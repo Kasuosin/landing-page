@@ -11,34 +11,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="settings-container">
-        <button id="settings-btn" class="settings-btn" aria-label="Settings">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+    <!-- Top Navigation Tabs (Browser Style) -->
+    <div class="top-tab-bar">
+        <button id="tab-settings-btn" class="nav-tab" onclick="openDrawerWithTab('settings')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            <span data-i18n="nav_settings_tab">Settings</span>
         </button>
-        <div id="settings-menu" class="settings-menu">
-            <div class="settings-section-title" data-i18n="settings_language">Language Options</div>
-            <button class="theme-option" onclick="setLanguage('en')" data-i18n="lang_en">English</button>
-            <button class="theme-option" onclick="setLanguage('tr')" data-i18n="lang_tr">Turkish</button>
-            <button class="theme-option" onclick="setLanguage('de')" data-i18n="lang_de">German</button>
-            <button class="theme-option" onclick="setLanguage('fr')" data-i18n="lang_fr">French</button>
-            
-            <div class="settings-divider"></div>
-            
-            <div class="settings-section-title" data-i18n="settings_bg">Background Color</div>
-            <button class="theme-option" onclick="setTheme('original')" data-i18n="theme_original">Original Theme</button>
-            <button class="theme-option" onclick="setTheme('light')" data-i18n="theme_light">Light Mode</button>
-            <button class="theme-option" onclick="setTheme('dark')" data-i18n="theme_dark">Dark Mode</button>
+        <button id="tab-menu-btn" class="nav-tab" onclick="openDrawerWithTab('menu')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <span data-i18n="nav_menu_tab">Menu</span>
+        </button>
+    </div>
+
+    <!-- Navigation Drawer -->
+    <div id="drawer-panel" class="drawer-panel">
+        <div class="drawer-tab-container">
+            <!-- Menu View -->
+            <div id="view-menu" class="drawer-view active">
+                <div class="drawer-header" data-i18n="nav_certificates">Certificates</div>
+                <button class="cert-btn" style="margin-bottom: 0.5rem;" onclick="openMisModal()" data-i18n="nav_mis_whatis">YBS Nedir?</button>
+                <button class="cert-btn" onclick="openCertModal()" data-i18n="nav_certificates_view">View Certificates</button>
+            </div>
+
+            <!-- Settings View -->
+            <div id="view-settings" class="drawer-view">
+                <div class="drawer-header" data-i18n="settings_language">Language Options</div>
+                <div class="drawer-settings-grid">
+                    <button class="theme-option" onclick="setLanguage('en')" data-i18n="lang_en">English</button>
+                    <button class="theme-option" onclick="setLanguage('tr')" data-i18n="lang_tr">Turkish</button>
+                    <button class="theme-option" onclick="setLanguage('de')" data-i18n="lang_de">German</button>
+                    <button class="theme-option" onclick="setLanguage('fr')" data-i18n="lang_fr">French</button>
+                </div>
+                
+                <div class="settings-divider"></div>
+                
+                <div class="drawer-header" data-i18n="settings_bg">Background Color</div>
+                <div class="drawer-settings-grid">
+                    <button class="theme-option" onclick="setTheme('original')" data-i18n="theme_original">Original Theme</button>
+                    <button class="theme-option" onclick="setTheme('light')" data-i18n="theme_light">Light Mode</button>
+                    <button class="theme-option" onclick="setTheme('dark')" data-i18n="theme_dark">Dark Mode</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <aside class="left-sidebar">
-        <h3 class="sidebar-title" data-i18n="sidebar_title">The Bridge Between Two Worlds: What is Management Information Systems (MIS)?</h3>
-        <p class="sidebar-text">
-            <span data-i18n="sidebar_text1">In today’s digital age, many people think that business and technology are two separate planets. On one side, you have the Business world—focused on people, profits, and strategy. On the other side, you have the Technology world—focused on coding, hardware, and data. Management Information Systems (MIS) is the bridge that connects these two worlds.</span><br><br>
-            <strong data-i18n="sidebar_text2">Not Just Coding, Not Just Management</strong><br>
-            <span data-i18n="sidebar_text3">A common mistake is thinking that MIS students are just "programmers who take business classes" or "managers who know a little bit of IT." In reality, MIS is about problem-solving. Imagine a large hospital that wants to use an AI system to track patient records. The doctors know what they need for patient care (Business), but they don’t know how to build the software. The software engineers know how to write the code (Technology), but they don’t understand the daily workflow of a hospital. An MIS professional steps in to translate these needs, ensuring the technology actually serves the business goals.</span>
-        </p>
-    </aside>
+
 
     <div class="container">
         <header class="profile-header">
@@ -97,6 +114,48 @@
         </footer>
     </div>
 
+    <!-- Certificates Modal -->
+    <div id="cert-modal" class="cert-modal">
+        <div class="cert-modal-content">
+            <button class="cert-modal-close" onclick="closeCertModal()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <h2 class="cert-modal-title" data-i18n="cert_title">My Certificates</h2>
+            <div class="cert-cards">
+                <a href="https://coddy.tech/certifications/PD1SxN-python-ZP9neU" target="_blank" class="cert-card-item">
+                    <span data-i18n="cert_python">Python Certification - Coddy</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=2NwcJoGGYL" target="_blank" class="cert-card-item">
+                    <span data-i18n="cert_btk1">BTK Akademi Certification 1</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=lK1hweqqx7" target="_blank" class="cert-card-item">
+                    <span data-i18n="cert_btk2">Linkedln'de Etkili Profil Oluşturma</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- MIS (YBS) Modal -->
+    <div id="mis-modal" class="cert-modal">
+        <div class="cert-modal-content mis-content-scroll">
+            <button class="cert-modal-close" onclick="closeMisModal()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <h2 class="sidebar-title" data-i18n="sidebar_title" style="margin-top: 0.5rem; color: var(--accent);">The Bridge Between Two Worlds: What is Management Information Systems (MIS)?</h2>
+            <div class="sidebar-text" style="max-height: 60vh; overflow-y: auto; padding-right: 10px; margin-top: 1rem;">
+                <p>
+                    <span data-i18n="sidebar_text1">In today’s digital age, many people think that business and technology are two separate planets. On one side, you have the Business world—focused on people, profits, and strategy. On the other side, you have the Technology world—focused on coding, hardware, and data. Management Information Systems (MIS) is the bridge that connects these two worlds.</span>
+                </p>
+                <p style="margin-top: 1rem;">
+                    <strong data-i18n="sidebar_text2">Not Just Coding, Not Just Management</strong><br>
+                    <span data-i18n="sidebar_text3">A common mistake is thinking that MIS students are just "programmers who take business classes" or "managers who know a little bit of IT." In reality, MIS is about problem-solving. Imagine a large hospital that wants to use an AI system to track patient records. The doctors know what they need for patient care (Business), but they don’t know how to build the software. The software engineers know how to write the code (Technology), but they don’t understand the daily workflow of a hospital. An MIS professional steps in to translate these needs, ensuring the technology actually serves the business goals.</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
 
 
     <script>
@@ -110,18 +169,69 @@
                 document.getElementById('visit-counter-val').innerText = '?';
             });
 
-        // Settings Menu Toggle
-        const settingsBtn = document.getElementById('settings-btn');
-        const settingsMenu = document.getElementById('settings-menu');
-        settingsBtn.addEventListener('click', () => {
-            settingsMenu.classList.toggle('show');
-        });
-        
-        // Close menu when clicking outside
+        // UI Logic
+        const drawerPanel = document.getElementById('drawer-panel');
+        const certModal = document.getElementById('cert-modal');
+        const misModal = document.getElementById('mis-modal');
+        const tabSettingsBtn = document.getElementById('tab-settings-btn');
+        const tabMenuBtn = document.getElementById('tab-menu-btn');
+
+        function openDrawerWithTab(tab) {
+            drawerPanel.classList.add('open');
+            switchView(tab);
+        }
+
+        function switchView(view) {
+            const views = document.querySelectorAll('.drawer-view');
+            views.forEach(v => v.classList.remove('active'));
+            const targetView = document.getElementById('view-' + view);
+            if (targetView) targetView.classList.add('active');
+            
+            // Update active tab style
+            if (tabSettingsBtn) tabSettingsBtn.classList.toggle('active', view === 'settings');
+            if (tabMenuBtn) tabMenuBtn.classList.toggle('active', view === 'menu');
+        }
+
         document.addEventListener('click', (e) => {
-            if(!settingsBtn.contains(e.target) && !settingsMenu.contains(e.target)) {
-                settingsMenu.classList.remove('show');
+            if (!drawerPanel.contains(e.target) && !e.target.closest('.nav-tab')) {
+                drawerPanel.classList.remove('open');
+                if (tabSettingsBtn) tabSettingsBtn.classList.remove('active');
+                if (tabMenuBtn) tabMenuBtn.classList.remove('active');
             }
+        });
+
+        function openCertModal() {
+            certModal.classList.add('show');
+            drawerPanel.classList.remove('open');
+        }
+
+        function closeCertModal() {
+            certModal.classList.remove('show');
+        }
+
+        function openMisModal() {
+            misModal.classList.add('show');
+            drawerPanel.classList.remove('open');
+        }
+
+        function closeMisModal() {
+            misModal.classList.remove('show');
+        }
+
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+        }
+
+        // Close modals on outside click
+        window.addEventListener('click', (e) => {
+            if (e.target === certModal) closeCertModal();
+            if (e.target === misModal) closeMisModal();
         });
 
         // Theme Switcher
@@ -130,7 +240,6 @@
             if(theme !== 'original') {
                 document.body.classList.add('theme-' + theme);
             }
-            settingsMenu.classList.remove('show');
         }
 
         // Internationalization (i18n)
@@ -142,6 +251,15 @@
                 lang_de: "German",
                 lang_fr: "French",
                 settings_bg: "Background Color",
+                nav_certificates: "Certificates",
+                nav_certificates_view: "View Certificates",
+                nav_settings_tab: "Settings",
+                nav_menu_tab: "Menu",
+                nav_mis_whatis: "What is MIS?",
+                cert_title: "My Certificates",
+                cert_python: "Python Fundamentals",
+                cert_btk1: "Kariyerde Hedef Belirleme",
+                cert_btk2: "Linkedln'de Etkili Profil Oluşturma",
                 theme_original: "Original Theme",
                 theme_light: "Light Mode",
                 theme_dark: "Dark Mode",
@@ -163,6 +281,15 @@
                 lang_de: "Almanca",
                 lang_fr: "Fransızca",
                 settings_bg: "Arkaplan Rengi",
+                nav_certificates: "Sertifikalarım",
+                nav_certificates_view: "Sertifikaları Görüntüle",
+                nav_settings_tab: "Ayarlar",
+                nav_menu_tab: "Menü",
+                nav_mis_whatis: "YBS Nedir?",
+                cert_title: "Sertifikalarım",
+                cert_python: "Python Fundamentals",
+                cert_btk1: "Kariyerde Hedef Belirleme",
+                cert_btk2: "Linkedln'de Etkili Profil Oluşturma",
                 theme_original: "Orijinal Tema",
                 theme_light: "Açık Tema",
                 theme_dark: "Koyu Tema",
@@ -184,6 +311,15 @@
                 lang_de: "Deutsch",
                 lang_fr: "Französisch",
                 settings_bg: "Hintergrundfarbe",
+                nav_certificates: "Zertifikate",
+                nav_certificates_view: "Zertifikate anzeigen",
+                nav_settings_tab: "Einstellungen",
+                nav_menu_tab: "Menü",
+                nav_mis_whatis: "Was ist MIS?",
+                cert_title: "Meine Zertifikate",
+                cert_python: "Python Fundamentals",
+                cert_btk1: "Kariyerde Hedef Belirleme",
+                cert_btk2: "Linkedln'de Etkili Profil Oluşturma",
                 theme_original: "Originales Design",
                 theme_light: "Heller Modus",
                 theme_dark: "Dunkler Modus",
@@ -205,6 +341,15 @@
                 lang_de: "Allemand",
                 lang_fr: "Français",
                 settings_bg: "Couleur de Fond",
+                nav_certificates: "Certificats",
+                nav_certificates_view: "Voir les certificats",
+                nav_settings_tab: "Paramètres",
+                nav_menu_tab: "Menu",
+                nav_mis_whatis: "Qu'est-ce que le SIG ?",
+                cert_title: "Mes Certificats",
+                cert_python: "Python Fundamentals",
+                cert_btk1: "Kariyerde Hedef Belirleme",
+                cert_btk2: "Linkedln'de Etkili Profil Oluşturma",
                 theme_original: "Thème Original",
                 theme_light: "Mode Clair",
                 theme_dark: "Mode Sombre",
@@ -229,8 +374,6 @@
                     el.innerHTML = translations[lang][key];
                 }
             });
-            // Close menu
-            settingsMenu.classList.remove('show');
         }
 
         // Initialize default language
